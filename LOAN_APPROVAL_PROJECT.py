@@ -16,7 +16,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 ######################################################################################################
 st.set_page_config(page_title=" 💵 LAP ", layout="wide")
 st.title(" 💵 Loan Approval Prediction ")
-st.caption(" Machine Learnig Classification Project using Loan Dataset. This is just for practice purpose.")
+st.caption(" Machine Learnig Classification Project using Loan Dataset.")
 
 ######################################################################################################
 # Data Importing / Loading (cached)
@@ -216,4 +216,5 @@ if st.button("Predict Approval"):
     if pred == 1 :
         st.success(f" {applicant_name} : APPROVED (probability: {prob:.2%})")
     else: 
+
         st.error(f" {applicant_name} :REJECTED (probability: {prob:.2%})")
