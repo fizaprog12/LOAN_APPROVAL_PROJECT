@@ -97,8 +97,8 @@ st.sidebar.header("(1) Load Dataset")
 
 csv_path = st.sidebar.text_input(
     "CSV Path",
-    value = "Data/loan_dataset.csv",
-    help="Put the paath to the dataset CSV. If you run from same folder, keep it as-is"
+    value = "DATA/loan_dataset.csv",
+    help="Put the path to the dataset CSV. If you run from same folder, keep it as-is"
 )
 
 # Try loading the dataset
@@ -218,3 +218,4 @@ if st.button("Predict Approval"):
     else: 
 
         st.error(f" {applicant_name} :REJECTED (probability: {prob:.2%})")
+
